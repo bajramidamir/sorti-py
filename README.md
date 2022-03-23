@@ -1,8 +1,6 @@
 # sorti-py, written in Python
 
 
---------------------------
-
 Sorti-Py is a CLI tool that sorts the current folder you're in.
 
 It sorts all files into their respective folders, for example, it takes all .pdf files in your current directory, and puts them in a pdf folder.
