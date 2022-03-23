@@ -1,4 +1,5 @@
 # sorti-py
+# written in Python
 
 --------------------------
 
