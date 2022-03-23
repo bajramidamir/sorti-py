@@ -17,6 +17,8 @@ It works for all extensions and will make organizing messy folders a lot easier.
 - clone this repository
 - cd into sorti-py
 - type "sudo mv sortipy /usr/bin"
+
+
 **NOTE: ** The reason you need sudo privileges is to move sortipy to $PATH, so you can use it anywhere without needing to specify the location of the script.
 
 --------------------------
