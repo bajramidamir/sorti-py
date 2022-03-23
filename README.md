@@ -11,3 +11,10 @@ It works for all extensions and will make organizing messy folders a lot easier.
 - cd into the directory you wish sorted
 - type "sortipy"
 
+--------------------------
+
+**Installation**
+- clone this repository
+- cd into sorti-py
+- run chmod +x install.sh
+- run install.sh
