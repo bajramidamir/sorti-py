@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+import os
+import shutil
+
+path = os.getcwd()
+lista = os.listdir(path)
+for f in lista:
+	name, ext = os.path.splitext(f)
+	ext = ext[1:]
+
+	if ext == "":
+		continue
+
+	if os.path.exists(path + "/" + ext):
+		shutil.move(path + "/" + f, path + "/" + ext + "/")
+	
+	else:
+		os.makedirs(path + "/" + ext)
+		shutil.move(path + "/" + f, path + "/" + ext + "/")
