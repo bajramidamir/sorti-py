@@ -6,24 +6,27 @@ from pathlib import Path
 
 path = os.getcwd()
 files = list(file for file in os.listdir(path)
-         if os.path.isfile(os.path.join(path, file)))
+             if os.path.isfile(os.path.join(path, file)))
 
-def moveFile (filePath: str, extDir: str) -> str:
-	fileName = filePath.split('/')[-1]
-	if Path(f"{extDir}/{fileName}").is_file():
-		print(f"[!SKIPPED!] The file \"{fileName}\" already exists under \"{extDir}\".")
-	else:
-		Path(extDir).mkdir(exist_ok=True)
-		shutil.move(filePath, extDir)
+
+def moveFile(filePath: str, extDir: str) -> str:
+    fileName = filePath.split('/')[-1]
+    if Path(f"{extDir}/{fileName}").is_file():
+        print(
+            f"[!SKIPPED!] The file \"{fileName}\" already exists under \"{extDir}\".")
+    else:
+        Path(extDir).mkdir(exist_ok=True)
+        shutil.move(filePath, extDir)
+
 
 for f in files:
-	name, ext = os.path.splitext(f)
-	ext = ext[1:].lower()
-	ext_dir = f"{path}/{ext}/"
-	file_path = f"{path}/{f}"
+    name, ext = os.path.splitext(f)
+    ext = ext[1:].lower()
+    ext_dir = f"{path}/{ext}/"
+    file_path = f"{path}/{f}"
 
-	if not ext:
-		noext_dir = f"{path}/noextension/"
-		moveFile(file_path, noext_dir)
-	else:
-		moveFile(file_path, ext_dir)
+    if not ext:
+        noext_dir = f"{path}/noextension/"
+        moveFile(file_path, noext_dir)
+    else:
+        moveFile(file_path, ext_dir)
