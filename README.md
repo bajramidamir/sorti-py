@@ -9,6 +9,7 @@ It works for all extensions and will make organizing messy folders a lot easier.
 # Usage
 - cd into the directory you wish sorted
 - type "sortipy"
+- you can use the -h flag to see optional arguments
 
 
 
