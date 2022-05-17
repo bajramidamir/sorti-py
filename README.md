@@ -22,4 +22,4 @@ It works for all extensions and will make organizing messy folders a lot easier.
 **NOTE:** The reason you need sudo privileges is to move sortipy to $PATH, so you can use it anywhere without needing to specify the location of the script.
 
 -------------------------------
-Video demonstration: https://youtu.be/19oVTrq96HA
+Video demonstration: https://youtu.be/YH-JPhDosIc
