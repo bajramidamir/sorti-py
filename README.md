@@ -23,3 +23,6 @@ It works for all extensions and will make organizing messy folders a lot easier.
 
 -------------------------------
 Video demonstration: https://youtu.be/YH-JPhDosIc
+
+-------------------------------
+Windows/Mac users have the option of using the GUI version of Sorti-Py:  https://github.com/Tempest20/sorti-py-gui
