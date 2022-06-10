@@ -12,7 +12,7 @@ if __name__ == '__main__':
 	parser.add_argument(
 		'--default-dir', 
 		type=str, 
-		help='Default directory name (used when files have no extensions.',
+		help='Default directory name (used when files have no extensions)',
 		default='noextension'
 	)
 	parser.add_argument(
